@@ -1,6 +1,6 @@
 const amqplib = require('amqplib')
 
-const exchangeName = 'Topic_logs';
+const exchangeName = 'pub-sub';
 const args = process.argv.slice(2);
 const logType = args[0] || 'anonymous.info';
 const msg = args[1] || "common msg for checking the topic exchange"
